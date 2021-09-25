@@ -1,8 +1,8 @@
 package com.company;
 
 public class Square extends Figure{
-    private double ax, ay, bx, by, cx, cy, dx, dy;
-    private double a, b, c, d;
+    protected double ax, ay, bx, by, cx, cy, dx, dy;
+    protected double a, b, c, d;
 
     public Square() {
         findEdges();

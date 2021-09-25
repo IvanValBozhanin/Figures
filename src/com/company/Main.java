@@ -5,7 +5,17 @@ public class Main {
     public static void main(String[] args) {
 //        testSquare();
 //        testRectangle();
-        testCircle();
+//        testCircle();
+        testComparableSquares();
+    }
+
+    private static void testComparableSquares() {
+        ComparableSquare square1 = new ComparableSquare(0,0, 1,0, 1,1, 0, 1);
+        ComparableSquare square2 = new ComparableSquare(0, 0, 2, 0, 2, 2, 0 ,2 );
+
+        System.out.println(square1.compareTo(square2) > 0 ? "square1 is bigger than square2" :
+                (square1.compareTo(square2) < 0 ? "square2 is bigger than square1" :
+                        "square1 has the same surface as square2"));
     }
 
     public static void testSquare(){
